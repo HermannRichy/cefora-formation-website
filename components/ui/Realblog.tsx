@@ -7,7 +7,7 @@ const Realblog = () => {
     <section className="bg-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Titre principal */}
-        <h2 className="text-3xl font-bold text-center mb-4">Nos nouvelles filières</h2>
+        <h2 className="text-3xl font-bold text-center mb-4 font-title">Nos nouvelles filières</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
@@ -22,7 +22,7 @@ const Realblog = () => {
             
             {/* Overlay visible au survol */}
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="text-white text-xl font-bold mb-2">Soudure Industrielle</h3>
+              <h3 className="font-title text-white text-xl font-bold mb-2">Soudure Industrielle</h3>
               <p className="text-gray-200 text-sm mb-4">
                 Formation complète en techniques de soudage avec certification reconnue
               </p>
@@ -42,7 +42,7 @@ const Realblog = () => {
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="text-white text-xl font-bold mb-2">Arts Culinaires</h3>
+              <h3 className="font-title text-white text-xl font-bold mb-2">Arts Culinaires</h3>
               <p className="text-gray-200 text-sm mb-4">
                 Devenez chef professionnel avec notre programme intensif
               </p>
@@ -62,7 +62,7 @@ const Realblog = () => {
             />
             
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="text-white text-xl font-bold mb-2">Transport & Logistique</h3>
+              <h3 className="font-title text-white text-xl font-bold mb-2">Transport & Logistique</h3>
               <p className="text-gray-200 text-sm mb-4">
                 Maîtrisez la gestion de la chaîne d’approvisionnement
               </p>

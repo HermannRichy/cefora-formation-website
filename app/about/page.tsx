@@ -39,7 +39,7 @@ const About = () => {
               </div>
 
               <div className="relative md:mt-0 -mt-6">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
+                <h1 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
                   <span className="block">Derrière chaque compétence, </span>
                   <span className="text-[#FED136]">une vision</span>
                 </h1>
@@ -124,8 +124,8 @@ const About = () => {
         <section className="py-12 sm:py-16 lg:py-24 max-w-[900px] mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-8 xl:gap-16">
             <div className="w-full lg:w-2/5 text-center lg:text-left">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-title font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
-                <span className="text-[#FED136]">À propos</span> de nous
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-title font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+                <span className="text-[#FED136] font-title">À propos</span> de nous
               </h2>
               <p className="font-sans text-gray-700 mb-4 sm:mb-6 text-base sm:text-lg">
                 Nous ne sommes pas un centre de formation comme les autres. Nous
@@ -196,7 +196,7 @@ const About = () => {
           <div className="container mx-auto px-4 sm:px-6">
             {/* Titre et description alignés à gauche */}
             <div className="mb-10 max-w-[900px] mx-auto text-left">
-              <h2 className="text-4xl sm:text-5xl font-extrabold text-[#232C64] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#232C64] font-title mb-4">
                 Nos Atouts
               </h2>
               <p className="text-gray-700 text-base sm:text-lg">
@@ -259,13 +259,13 @@ const About = () => {
           <div className="max-w-[900px] mx-auto flex flex-col-reverse lg:flex-row items-center gap-8">
             {/* Texte */}
             <div className="w-full lg:w-1/2 text-center sm:text-left">
-              <h2 className="text-[#FED136] text-4xl font-extrabold mb-4">
+              <h2 className="text-[#FED136] text-2xl font-extrabold mb-4 font-title">
                 Notre mission
               </h2>
               <div className="text-gray-700 text-base space-y-3">
                 <p>
-                  Chez <span className="font-semibold text-[#232C64]">CEFORA</span>{" "}
-                  <span className="font-semibold text-[#DB3234]">FORMATION</span>, nous façonnons l’avenir
+                  Chez <span className="font-semibold text-[#232C64] font-title">CEFORA</span>{" "}
+                  <span className="font-semibold text-[#DB3234] font-title">FORMATION</span>, nous façonnons l’avenir
                   de nos apprenants grâce à des formations pratiques, innovantes et tournées vers l’emploi.
                 </p>
                 <p>

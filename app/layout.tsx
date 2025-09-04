@@ -3,19 +3,19 @@ import type { Metadata } from 'next'
 import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
-// Import Google Fonts avec Tailwind Font Variables
-import { Montserrat } from 'next/font/google'
-import { Dancing_Script } from 'next/font/google'
+// Import Google Fonts
+import { Poppins, Unbounded } from 'next/font/google'
 
-const montserrat = Montserrat({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-montserrat',
+  variable: '--font-poppins',
   display: 'swap',
+   weight: ['400', '600', '700']
 })
 
-const dancingScript = Dancing_Script({
+const unbounded = Unbounded({
   subsets: ['latin'],
-  variable: '--font-dancing',
+  variable: '--font-unbounded',
   display: 'swap',
 })
 
@@ -26,9 +26,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${montserrat.variable} ${dancingScript.variable}`}>
-      {/* Montserrat est défini dans le CSS global comme police par défaut */}
-      <body className="font-sans">
+    <html lang="fr" className={`${poppins.variable} ${unbounded.variable}`}>
+      <body className="font-text">
         <Header />
         <main>{children}</main>
         <Footer />

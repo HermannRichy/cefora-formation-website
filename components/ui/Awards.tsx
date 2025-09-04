@@ -61,7 +61,7 @@ const Awards = () => {
   return (
     <section className="w-full py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="font-title text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
           Récompenses
         </h2>
 

@@ -79,7 +79,7 @@ export const ClassAnalyticsSection = () => {
             </div>
 
             <div className="md:w-1/2 text-center md:text-left space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+              <h2 className="font-title text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
                 Qui sommes-nous?
               </h2>
 
@@ -117,7 +117,7 @@ export const ClassAnalyticsSection = () => {
                       <div className="w-4 h-4 bg-white transform -rotate-45"></div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
+                      <h4 className="font-title text-lg font-semibold text-gray-800">{item.title}</h4>
                       <p className="text-gray-600 text-xs md:text-sm">{item.text}</p>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export const ClassAnalyticsSection = () => {
               {/* Left Side - Content */}
               <div className="md:w-1/2 space-y-6">
                 {/* Title */}
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                <h2 className="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                   Formations techniques et professionnelles
                 </h2>
 
@@ -193,7 +193,6 @@ export const ClassAnalyticsSection = () => {
 
               {/* Right Side - Image */}
               <div className="md:w-1/2 relative w-full h-[320px] sm:h-[400px] md:h-[500px]">
-                {/* Demi-cercle avec dégradé rouge → clair */}
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[280px] sm:w-[350px] md:w-[400px] h-[140px] sm:h-[175px] md:h-[200px] rounded-t-full z-0 bg-gradient-to-t from-red-600 to-red-50"></div>
 
                 {/* Conteneur image avec bords arrondis + au-dessus du cercle */}

@@ -26,7 +26,7 @@ export default function Footer() {
                 />
               </div>
               {/* Texte "CEFORA FORMATION" avec des tailles réduites pour le footer */}
-              <span className="text-white text-base sm:text-lg font-bold ml-3">CEFORA FORMATION</span>
+              <span className="text-white text-base sm:text-lg font-bold ml-3 font-title">CEFORA FORMATION</span>
               {/* === FIN DES NOUVELLES MODIFICATIONS === */}
             </Link>
             {/* La description reste lisible sans être surdimensionnée */}
@@ -52,7 +52,7 @@ export default function Footer() {
 
           {/* Bloc 2 : Navigation */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold">Navigation</h3>
+            <h3 className="text-lg font-semibold font-title">Navigation</h3>
             <ul className="space-y-3 text-white text-base md:text-lg">
               <li><Link href="/filieres" className="hover:text-yellow-400 transition-colors">Filières</Link></li>
               <li><Link href="/about" className="hover:text-yellow-400 transition-colors">À propos</Link></li>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Bloc 3 : Filières */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold">Filières</h3>
+            <h3 className="text-lg font-semibold font-title">Filières</h3>
             <ul className="space-y-3 text-white text-base md:text-lg">
               <li><Link href="/programmes/informatique" className="hover:text-yellow-400 transition-colors">Informatique</Link></li>
               <li><Link href="/programmes/gestion" className="hover:text-yellow-400 transition-colors">Gestion</Link></li>
@@ -76,7 +76,7 @@ export default function Footer() {
 
           {/* Bloc 4 : Company */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold">Company</h3>
+            <h3 className="text-lg font-semibold font-title">Company</h3>
             <ul className="space-y-3 text-white text-base md:text-lg">
               <li><Link href="#" className="hover:text-yellow-400 transition-colors">Évènements</Link></li>
               <li><Link href="#" className="hover:text-yellow-400 transition-colors">Confidentialité</Link></li>

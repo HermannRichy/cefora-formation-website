@@ -23,11 +23,11 @@ export default function Hero() {
         
         {/* Colonne gauche (Texte) - après l'image sur mobile */}
         <div className="text-white w-full md:w-1/2 max-w-2xl text-center md:text-left px-2 sm:px-0">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-bold leading-tight">
+          <h1 className="font-title text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-bold leading-tight">
             Centre de formation
           </h1>
           <div className="relative mt-2 md:mt-4">
-            <span className="text-4xl sm:text-6xl md:text-[3.5rem] lg:text-[4.5rem] font-bold tracking-tight block">
+            <span className="font-title text-2xl sm:text-6xl md:text-[3.5rem] lg:text-[4.5rem] font-bold tracking-tight block">
               professionnelle
             </span>
           </div>

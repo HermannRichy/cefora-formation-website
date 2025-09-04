@@ -47,7 +47,7 @@ export default function SectionSteps() {
                         priority
                     />
                 </div>
-                <span className="font-medium text-xs">Choisir une formation.</span>
+                <span className="font-medium text-xs font-title">Choisir une formation.</span>
             </div>
             <p className="text-xs mt-1">
                 J‘ai d‘abord contacté CEFORA pour m‘informer sur leurs formations. Ils m‘ont bien guidée !
@@ -72,7 +72,7 @@ export default function SectionSteps() {
             <div className="absolute -ml-15 -left-1 w-2 h-2 md:w-3 md:h-3 bg-[#8C8C8C] rotate-45 z-20"></div>
             <div className="absolute -bottom-10 -right-15 w-2 h-2 md:w-3 md:h-3 bg-[#FED136] rotate-45 z-20"></div>
             <div className="flex items-center gap-2">
-                <span className="font-medium text-xs">Remplir le dossier.</span>
+                <span className="font-medium text-xs font-title">Remplir le dossier.</span>
             </div>
             <p className="text-xs mt-1">
                 L‘inscription a été fait en ligne. L‘équipe est très réactive !
@@ -113,7 +113,7 @@ export default function SectionSteps() {
                   className="object-cover"
                 />
               </div>
-              <span className="font-medium text-xs md:text-sm">Commencez la formation.</span>
+              <span className="font-medium text-xs md:text-sm font-title ">Commencez la formation.</span>
             </div>
             <p className="text-xs md:text-sm mt-1">Je suis en pleine formation à CEFORA.</p>
           </div>
@@ -121,7 +121,7 @@ export default function SectionSteps() {
 
         {/* Colonne droite - Version mobile optimisée */}
         <div className="pt-3 md:pt-6 flex flex-col">
-  <h2 className="text-lg sm:text-xl md:text-3xl font-bold mb-2 md:mb-4">S‘inscrire chez CEFORA Formation</h2>
+  <h2 className="sm:text-xl md:text-3xl font-bold mb-2 md:mb-4 font-title">S‘inscrire chez CEFORA Formation</h2>
   <p className="text-gray-300 mb-3 text-xs md:text-base">
     Suivez ces étapes simples pour rejoindre nos formations professionnelles certifiantes.
   </p>
