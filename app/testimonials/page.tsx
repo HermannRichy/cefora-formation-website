@@ -1,117 +1,149 @@
+import Image from "next/image"
+
 export default function Testimonials() {
+  const testimonials1 = [
+    {
+      name: "Ray Newton",
+      quote: "An interesting place to study and learn new things every day.",
+      image: "/student-yellow-bg-1.jpg",
+      bgColor: "bg-amber-400",
+    },
+    {
+      name: "Norman Cobb",
+      quote: "Brida makes learning exciting and practical for everyone.",
+      image: "/student-yellow-bg-2.jpg",
+      bgColor: "bg-amber-400",
+    },
+    {
+      name: "Norman Cobb",
+      quote: "Brida has given me excellent internship projects to work on.",
+      image: "/student-orange-bg.jpg",
+      bgColor: "bg-orange-500",
+    },
+  ]
+
+  const testimonials2 = [
+    {
+      name: "Ray Newton",
+      quote: "A great place to learn and grow professionally.",
+      image: "/student-burgundy-bg.jpg",
+      bgColor: "bg-rose-900",
+    },
+    {
+      name: "Norman Cobb",
+      quote: "Brida provides innovative and exceptional projects.",
+      image: "/student-yellow-bg-3.jpg",
+      bgColor: "bg-amber-400",
+    },
+    {
+      name: "Norman Cobb",
+      quote: "Brida makes every study exceptional and memorable.",
+      image: "/student-purple-bg.jpg",
+      bgColor: "bg-purple-300",
+    },
+  ]
+
   return (
-    <main className="bg-white text-black">
-      {/* Header section */}
-      <section className="bg-[#0a0a0a] text-white py-16 px-6 text-center">
-        <h2 className="text-4xl font-bold mb-4">
-          Ce que nos Étudiants<br /> disent à propos de <span className="text-yellow-400">CEFORA FORMATION</span>
-        </h2>
-        <p className="max-w-2xl mx-auto text-gray-300">
-          Découvrez les témoignages et enseignements de nos meilleurs étudiants qui ont réussi dans leurs études en génie logiciel.
-        </p>
-      </section>
-
-      {/* First testimonials section */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
-        <h3 className="text-2xl font-semibold mb-8">
-          Meilleur diplômé en génie logiciel
-        </h3>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Ray Newton"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Michel</h4>
-            <p className="text-sm text-gray-600">“Un endroit intéressant pour étudier”</p>
+    <main className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative bg-[#1a1a1a] text-white py-16 px-6">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-balance">
+              L'avis de nos étudiants sur Cefora 
+            </h1>
           </div>
 
-          {/* Card 2 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/44.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Komlan</h4>
-            <p className="text-sm text-gray-600">
-              Cefora rend l’apprentissage passionnant et pratique.”
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/50.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Christian</h4>
-            <p className="text-sm text-gray-600">
-              “Cefora m’a confié d’excellents projets de stage.”
-            </p>
+          {/* Large quotation mark */}
+          <div className="hidden md:block">
+            <svg className="w-32 h-32 text-muted/20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
           </div>
         </div>
       </section>
 
-      {/* Second testimonials section */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
-        <h3 className="text-2xl font-semibold mb-8">
-          Meilleur diplômé en génie logiciel
-        </h3>
+      {/* First Testimonials Section */}
+      <section className="py-16 px-6 bg-card">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-foreground">
+            Diplômé en ingénierie logicielle, major de promotion"
+          </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/60.jpg"
-              alt="Ray Newton"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Bidene</h4>
-            <p className="text-sm text-gray-600">“Un endroit formidable pour apprendre.”</p>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials1.map((testimonial, index) => (
+              <article
+                key={index}
+                className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className={`${testimonial.bgColor} p-8 flex items-center justify-center`}>
+                  <div className="relative w-40 h-40 rounded-2xl overflow-hidden">
+                    <Image
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={testimonial.name}
+                      fill
+                      className="object-cover"
+                      sizes="160px"
+                    />
+                  </div>
+                </div>
 
-          {/* Card 2 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/70.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Chivas</h4>
-            <p className="text-sm text-gray-600">
-              “Cefora met à disposition des projets innovants et exceptionnels.”
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 text-center">
-            <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
-              alt="Norman Cobb"
-              className="w-32 h-32 rounded-xl mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-bold text-lg">Rodrigue</h4>
-            <p className="text-sm text-gray-600">
-              “Cefora rend chaque étude exceptionnelle et mémorable.”  
-            </p>
+                <div className="p-6 text-center">
+                  <h3 className="font-bold text-lg mb-2 text-foreground">{testimonial.name}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">"{testimonial.quote}"</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Call to action */}
-      <section className="py-16 bg-gradient-to-r from-yellow-400 to-orange-500 text-center text-black">
-        <h3 className="text-2xl font-semibold mb-6">
-          Rejoignez-nous pour réussir ensemble
-        </h3>
-        <button className="px-6 py-3 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition">
-          Commencer
-        </button>
+      {/* Second Testimonials Section */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-foreground">
+            Diplômé d'excellence en génie logiciel
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials2.map((testimonial, index) => (
+              <article
+                key={index}
+                className="bg-background rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className={`${testimonial.bgColor} p-8 flex items-center justify-center`}>
+                  <div className="relative w-40 h-40 rounded-2xl overflow-hidden">
+                    <Image
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={testimonial.name}
+                      fill
+                      className="object-cover"
+                      sizes="160px"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-6 text-center">
+                  <h3 className="font-bold text-lg mb-2 text-foreground">{testimonial.name}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">"{testimonial.quote}"</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6 bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 text-balance">
+           Rejoignez-nous pour réussir ensemble
+          </h2>
+          <button className="px-8 py-4 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-lg">
+            Commencer
+          </button>
+        </div>
       </section>
     </main>
-  );
+  )
 }
