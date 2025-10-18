@@ -48,25 +48,28 @@ const teachers: Teacher[] = [
 
 const teachingMethods = [
   {
-    title: "Tips on standing a chemistry",
-    description: "Nunc auctor consequat lorem, in posuere enim hendrerit sed.",
+    title: "Conseils pour créer une alchimie",
+    description:
+      "Découvrez comment établir une véritable connexion entre enseignants et étudiants pour favoriser un apprentissage harmonieux et dynamique.",
     image: "/chemistry-lab-teaching.jpg",
     author: "Tara Scot",
-    date: "Jun 24, 2021",
+    date: "24 juin 2021",
   },
   {
-    title: "Tips on standing a chemistry",
-    description: "Nunc auctor consequat lorem, in posuere enim hendrerit sed.",
+    title: "Conseils pour comprendre la chimie",
+    description:
+      "Apprenez des méthodes simples et efficaces pour maîtriser les notions essentielles de chimie et améliorer votre compréhension des réactions chimiques.",
     image: "/science-classroom-teaching.jpg",
     author: "Tara Scot",
-    date: "Jun 24, 2021",
+    date: "24 juin 2021",
   },
   {
-    title: "Tips on standing a chemistry",
-    description: "Nunc auctor consequat lorem, in posuere enim hendrerit sed.",
+    title: "Astuces pour réussir en chimie",
+    description:
+      "Découvrez des stratégies pratiques pour mieux étudier, retenir les formules et aborder les expériences de chimie avec confiance et précision.",
     image: "/students-learning-chemistry.jpg",
     author: "Tara Scot",
-    date: "Jun 24, 2021",
+    date: "24 juin 2021",
   },
 ]
 
