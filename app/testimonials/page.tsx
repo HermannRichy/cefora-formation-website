@@ -3,20 +3,20 @@ import Image from "next/image"
 export default function Testimonials() {
   const testimonials1 = [
     {
-      name: "Ray Newton",
-      quote: "An interesting place to study and learn new things every day.",
+      name: "Mélissa",
+      quote: "Parfait pour débuter dans le métier de coiffure",
       image: "/student-yellow-bg-1.jpg",
       bgColor: "bg-amber-400",
     },
     {
-      name: "Norman Cobb",
-      quote: "Brida makes learning exciting and practical for everyone.",
+      name: "Clara",
+      quote: "Formation parfaite pour une reconversion dans le domaine de la santé",
       image: "/student-yellow-bg-2.jpg",
       bgColor: "bg-amber-400",
     },
     {
-      name: "Norman Cobb",
-      quote: "Brida has given me excellent internship projects to work on.",
+      name: "Théo",
+      quote: "Top pour les débutants ! L'ambiance est super !",
       image: "/student-orange-bg.jpg",
       bgColor: "bg-orange-500",
     },
@@ -24,20 +24,20 @@ export default function Testimonials() {
 
   const testimonials2 = [
     {
-      name: "Ray Newton",
-      quote: "A great place to learn and grow professionally.",
+      name: "Joël",
+      quote: "Le web change vite, mais un bon codeur formé chez Cefora garde toujours une longueur d’avance.",
       image: "/student-burgundy-bg.jpg",
       bgColor: "bg-rose-900",
     },
     {
-      name: "Norman Cobb",
-      quote: "Brida provides innovative and exceptional projects.",
+      name: "Chivas",
+      quote: "Chez Cefora, on ne se contente pas d’apprendre le code… on apprend à créer le futur",
       image: "/student-yellow-bg-3.jpg",
       bgColor: "bg-amber-400",
     },
     {
-      name: "Norman Cobb",
-      quote: "Brida makes every study exceptional and memorable.",
+      name: "Antonietta",
+      quote: "Chaque projet est un défi, chaque ligne de code une victoire. La persévérance, c’est la clé du succès.",
       image: "/student-purple-bg.jpg",
       bgColor: "bg-purple-300",
     },
@@ -67,7 +67,7 @@ export default function Testimonials() {
       <section className="py-16 px-6 bg-card">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-12 text-foreground">
-            Diplômé en ingénierie logicielle, major de promotion"
+            Diplômé en ingénierie logicielle, major de promotion
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -102,7 +102,7 @@ export default function Testimonials() {
       <section className="py-16 px-6 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-12 text-foreground">
-            Diplômé d'excellence en génie logiciel
+            Diplômé d'excellence en développeur Web
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
